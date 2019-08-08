@@ -1,4 +1,4 @@
-module github.com/mrlynn/mngoio
+module github.com/mrlynn/gohack
 
 go 1.12
 

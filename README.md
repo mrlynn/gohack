@@ -1,2 +1,2 @@
-# mngoio
-URL Shortener Implemented in Go and MongoDB
+# Go Hackathon Management System
+
