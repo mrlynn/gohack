@@ -1,0 +1,32 @@
+<html>
+  {{template "header.tmpl.html"}}
+<body>
+  {{template "nav.tmpl.html"}}
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <a href="/" class="lang-logo">
+      <img src="/static/img/devrel-leaf.png">
+    </a>
+    <h1>MongoDB Hackathon Teams</h1>
+      <p>Welcome to the MongoDB Engineering Offsite Hackathon</p>
+  </div>
+</div>
+<div class="container">
+    {{if .errMsg}}
+  <div class="alert alert-info text-center" role="alert">
+      {{.errMsg}}
+  </div>
+    {{end}}
+  <hr>
+  <div class="row">
+    <div class="col-md-12">
+      <h3><span class="glyphicon glyphicon-info-sign"></span> About the Hackathon</h3>
+      here are the teams.
+    </div>
+  </div> <!-- row -->
+    
+</div>
+
+</body>
+</html>

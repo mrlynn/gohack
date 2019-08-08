@@ -1,2 +1,2 @@
-# gohack
-Golang based hackathon management
+# mngoio
+URL Shortener Implemented in Go and MongoDB

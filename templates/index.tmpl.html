@@ -1,0 +1,52 @@
+<html>
+  {{template "header.tmpl.html"}}
+<body>
+  {{template "nav.tmpl.html"}}
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <a href="/" class="lang-logo">
+      <img src="/static/img/devrel-leaf.png">
+    </a>
+    <h1>MongoDB Hackathon</h1>
+      <p>Welcome to the MongoDB Engineering Offsite Hackathon</p>
+  </div>
+</div>
+<div class="container">
+    {{if .errMsg}}
+  <div class="alert alert-info text-center" role="alert">
+      {{.errMsg}}
+  </div>
+    {{end}}
+  <hr>
+  <div class="row">
+    <div class="col-md-6">
+      <h3><span class="glyphicon glyphicon-info-sign"></span> About the Hackathon</h3>
+      <ul>
+        You may work on anything you like for the Hackathon but it is suggested that it be related to MongoDB. Here are some suggestions:
+             <li>...</li>
+             <li>...</li>
+             <li>...</li>
+             <li>...</li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <h3><span class="glyphicon glyphicon-link"></span> Next Steps</h3>
+      <ul>
+        <li><a href="/signup">Sign-in, and Sign-up</a></li>
+        <li>Review the existing <a href="/teams">teams</a>.</li>
+        <li>Review the <a href="/projects">projects</a>.</li>
+      </ul>
+      <h3><span class="glyphicon glyphicon-link"></span> Helpful Links</h3>
+      <ul>
+        <li><a href="https://docs.mongodb.com">MongoDB Documentation</a></li>
+        <li><a href="https://github.com/mongodb/mongo-go-driver/">MongoDB Go Driver</a></li>
+        <li><a href="https://jira.mongodb.org/projects/GODRIVER/issues/GODRIVER-1209?filter=allopenissues">MongoDB Go Driver Project Page</a></li>
+      </ul>
+    </div>
+  </div> <!-- row -->
+    
+</div>
+
+</body>
+</html>

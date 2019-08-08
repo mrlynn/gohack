@@ -1,0 +1,60 @@
+<html>
+  {{template "header.tmpl.html"}}
+<body>
+  {{template "nav.tmpl.html"}}
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <a href="/" class="lang-logo">
+      <img src="/static/img/devrel-leaf.png">
+    </a>
+    <h1>MongoDB Hackathon Projects</h1>
+      <p>Welcome to the MongoDB Engineering Offsite Hackathon</p>
+  </div>
+</div>
+<div class="container">
+    {{if .errMsg}}
+  <div class="alert alert-info text-center" role="alert">
+      {{.errMsg}}
+  </div>
+    {{end}}
+  <hr>
+  <div class="row">
+    <div class="col-md-12">
+      <h3><span class="glyphicon glyphicon-info-sign"></span> About the Hackathon</h3>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Project Name</th>
+            <th scope="col">Team</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Project A</td>
+            <td>Team A</td>
+            <td>In Progress</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Project B</td>
+            <td>Team B</td>
+            <td>In Progress</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Project C</td>
+            <td>Team C</td>
+            <td>In Progress</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div> <!-- row -->
+
+</div>
+</body>
+</html>
